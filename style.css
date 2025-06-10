@@ -1,0 +1,8 @@
+/* 外部スタイルシート（style.css）で指定 */
+.external-style {
+  background-color: #f5f5f5;
+  color: #1a1a40;
+  padding: 10px;
+  font-weight: bold;
+  border-left: 5px solid #e94560;
+}
