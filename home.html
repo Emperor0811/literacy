@@ -2,32 +2,44 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>スタイルの三つの方法</title>
-  <!-- 外部スタイルシートの読み込み -->
+  <title>スタイルの三つの使い方</title>
+
+  <!-- ★ 外部スタイルシートの読み込み -->
   <link rel="stylesheet" href="style.css">
+
   <style>
-    /* 内部スタイルシート（style要素） */
+    /* ★ 内部スタイルシート（<style>要素） */
     h1 {
       color: #e94560;
       font-family: sans-serif;
     }
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+    }
   </style>
 </head>
-<body style="background-color: #1a1a40; color: #f5f5f5;">
 
-  <h1>三つのスタイルの指定方法</h1>
+<!-- ★ インラインスタイル（style属性） -->
+<body style="background-color: #1a1a40; color: #f5f5f5; font-family: sans-serif;">
 
-  <p>この文章はstyle属性で設定している</p>
+  <h1>スタイルの三つの使い方</h1>
 
-  <!-- インラインスタイル（style属性） -->
-  <p style="border: 2px dashed #e94560; padding: 10px;">
-    この段落はstyle要素で枠線を設定している
+  <!-- 内部スタイルシートでスタイルを当てているクラス -->
+  <p class="section-title">style属性</p>
+  <p style="padding: 10px; background-color: #333333; border-left: 5px solid #e94560;">
+    この段落はstyle属性で背景色や枠線が指定している
   </p>
 
+  <p class="section-title">style要素</p>
+  <p>
+    この見出しや「section-title」クラスは、HTML内の<style>タグに書かれたCSSでスタイルが決まっています。
+  </p>
+
+  <p class="section-title">3. 外部スタイルシート（style.css）</p>
   <p class="external-style">
-    この段落はstyle.cssで設定している
+    この段落はstyle.cssを使用
   </p>
 
 </body>
 </html>
-
